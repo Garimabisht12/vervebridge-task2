@@ -1,0 +1,150 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 20px;
+    
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 3rem;
+    margin-top: 5em;
+
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#quiz{
+    display: none;
+}
+/* Form Styling */
+form {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    background-color: #007BFF;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Questions Section */
+#questions {
+    margin-top: 20px;
+}
+
+/* Each Question Container */
+#questions div {
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#questions p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+label {
+    margin-left: 10px;
+    font-size: 1rem;
+    display: block;
+}
+
+/* Radio button styling */
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background-color: #4CAF50;
+}
+
+#submit, #back{
+    display: none;
+}
+
+#feedback button{
+    margin-bottom: 3em ;
+}
+
+#feedback #score{
+    color: green;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 1.5em;
+}
+
+#feedback div{
+    margin-bottom: 0.5em;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    form button {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
+
+
